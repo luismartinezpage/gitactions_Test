@@ -16,7 +16,8 @@ jobs:
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
   run-windows-command:
-    runs-on: windows-lastest
+    runs-on: windows-latest
+    needs: ["run-github-actions"]
     steps:
       - name: Directory Powershell
         run: Get-Location
