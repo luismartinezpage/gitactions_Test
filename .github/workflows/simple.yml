@@ -4,8 +4,8 @@ on: [push]
 
 jobs:
   run-shell-command:
-  runs-on: ubuntu-latest
-  steps: 
+    runs-on:  ubuntu-latest
+    steps:
     - name: echo message
       run: echo "Hello world"
     - name: multiline script
