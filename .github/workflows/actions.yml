@@ -15,4 +15,11 @@ jobs:
           who-to-greet: Luis
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
-
+  run-windows-command:
+    runs-on: windows-lastest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
