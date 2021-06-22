@@ -23,5 +23,5 @@ jobs:
       - name: Custom script
         uses: docker://node:14.17.1-alpine3.12
         with:
-          entrypoint: './script-sh'
+          entrypoint: ./script-sh
           args: 'Some string'
