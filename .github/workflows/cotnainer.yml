@@ -12,16 +12,16 @@ jobs:
       - name: Step with docker
         uses: docker://node:14.17.1-alpine3.12
         with:
-          entrypoint: '/ bin/echo'
+          entrypoint: '/bin/echo'
           args: 'Hello world'
       - name: Log node version
         uses: docker://node:14.17.1-alpine3.12
         with:
-          entrypoint: /usr/local/bin/node
-          args: -v
+          entrypoint: '/usr/local/bin/node'
+          args: '-v'
       - uses: actions/checkout@v1
       - name: Custom script
         uses: docker://node:14.17.1-alpine3.12
         with:
-          entrypoint: ./script-sh
-          args: "Some string"        
+          entrypoint: './script-sh'
+          args: 'Some string'
