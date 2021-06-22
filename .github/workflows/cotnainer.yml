@@ -24,4 +24,4 @@ jobs:
         uses: docker://node:14.17.1-alpine3.12
         with:
           entrypoint: ./script.sh
-          args: 'Some string'
+          args: "Some string"
